@@ -454,6 +454,10 @@ service tinyhostless_spk /system/bin/tinyhostless -D 0 -P 38 -C 36 -p 256 -n 2 -
     group root audio
     disabled
     oneshot
+	
+# SMART CHARGING
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
 
 service loopback_spk_start /vendor/bin/loopback.sh 1 1
     user root
