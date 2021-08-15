@@ -16,7 +16,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 # Inherit some common CherishOS stuff
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 CHERISH_BUILD_TYPE := OFFICIAL
-CHERISH_WITHGAPPS := true
+WITH_GMS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
